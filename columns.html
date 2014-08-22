@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width">
+
+<title>CSS Columns experiment | HTML makes me happy</title>
+
+<style>
+  /*elements*/
+	body {
+		background: #fff;
+		font-family: Verdana, Geneva, sans-serif;
+		color: #333;}
+	
+	aside {
+		box-sizing: border-box;
+		font-size: smaller;
+		color: #333;
+		padding: .25em;}
+	
+	/*section {margin: 1em 0px;}
+	header {margin-bottom: .5em;}*/
+	
+	h1 {
+		font-size: 2em;
+		font-weight: bold;
+		color:#cc0066;
+		font-family: Tahoma, Geneva, sans-serif;
+		margin-bottom: 0;}
+	
+	h2 {
+		margin-top: 0;
+		font-size: 1.5em;
+		font-weight: bold;
+		font-family: Tahoma, Geneva, sans-serif;}
+		
+	h3 {
+		font-size: 1em;
+		font-weight: bolder;
+		color: #333;}
+		
+	p { margin-top: 0;}
+	
+	ul li {
+		margin-top: 0;
+		list-style:disc;
+		padding: 0;}
+		
+	figure {
+		width: 70%;
+		margin: .5em 0;}
+		figure > figcaption {
+			text-align: left;
+			font-size: 70%;
+			font-style: italic;}
+  
+  /*classes*/
+	.container {
+		max-width: 1280px;
+		margin: auto;}
+   
+	.main {
+		width: 97%;
+		margin: 1em;}
+		
+	.columns {
+		-webkit-columns: 16em;
+	    -moz-columns: 16em;
+	    -ms-columns: 16em;
+	    -o-columns: 16em;
+	    columns: 16em;
+		width: 80%;
+		box-sizing: border-box;
+		margin: 0;}
+	   
+	.subtitle {
+		font-size: 105%;
+		font-style: italic;
+		color:#cc0066;}
+		
+	.clearfloat { clear: both;}
+	  
+  /*breakpoints*/
+  /*@media (min-width: 480px) { 
+	body {
+		margin: 0px;
+		padding: .25em;}
+	aside {width:98%;}
+  }
+  
+  @media (min-width: 768px) { 
+	body {
+		margin: auto;
+		padding: 1em;}
+	aside {width:98%;}
+	h1 {font-size: 140%;} 
+	h2 {font-size: 120%;} 
+	.fltlft {float: left;}
+	.fltrt {float: right;}
+	.clearfloat { clear: both;}
+	.container {
+		max-width: 990px;
+		min-width: 768px;}
+  }
+  
+  @media (min-width: 992px) { 
+	body {
+		margin: auto;
+		padding: 1em;}
+	aside {width:28%;}
+	h1 {font-size: 140%;} 
+	h2 {font-size: 120%;} 
+	.fltlft {float: left;}
+	.fltrt {float: right;}
+	.clearfloat { clear: both;}
+	.container {
+		max-width: 1260px;
+		min-width: 992px;}
+  }*/
+</style>
+</head>
+
+<body>
+<!--<div class="container">-->
+    <article class="main">
+      <!--<div>-->
+        <h1>CSS Columns experiment</h1>
+        <p class="subtitle">another way to do responsive design</p>
+        <div class="columns">
+          <p>Recently, I read <a href="http://alistapart.com/blog/post/ten-css-one-liners-to-replace-native-apps">this article</a>. No. 2 was extremely profound. With just this one line of CSS, <br /> article {columns: 15em;}<br />
+          , columns can be used to make content reponsive. Columns instead of page load heavy media queries. Wow. And duh! *forehead slap*</p>
+          <p><em> *insert content here* </em>  test columns code from the article. Just enough to see how content responds resized in the browser and on mobile devices.</p>
+          
+       <!-- </div>-->
+        
+<!--    <section>-->
+<!--      <header>-->
+          <h2>I'd like to do more</h2>
+          <figure>
+            <img src="http://lookieboo.com/wp-content/uploads/photo-12.jpg" alt="girl nerd" width=100%>
+            <figcaption> courtesy of lookieboo.com</figcaption>
+          </figure>
+          <p> So this page tests how columns might work. Why? To learn multiple, good  ways of accomplishing the same thing, of course.</p>     
+     <!-- </header>-->
+          <p> Yes, I'd like to do more...</p>
+          <ul>
+            <li>With CSS3 columns and flexboxes</li>
+            <li>Prototyping, and get faster at it</li>
+            <li>Paired UX and prototyping</li>
+            <li>Truly mobile first and structured content implementations</li>
+            <li>User research</li>
+            <li>With microcopy</li>
+            <li>Chair dancing when the code works</li>
+          </ul>
+  <!--  </section>
+        
+        <section class="fltlft">
+          <header>
+            <h1>Because I'm really good at</h1> 
+          </header>-->
+          <h2>Because I'm really good at</h2>
+          <ul>
+            <li>Sketching out an idea and using a prototype to finish thinking structure through</li>
+            <li>Cutting through the crap and getting to the heart of a challenge</li>
+            <li>Categorizing, organizing, and structuring content</li>
+            <li>Building reusable systems, content or code</li>
+            <li>Thinking in semantic HTML</li>
+            <li><a href="http://headrush.typepad.com/creating_passionate_users/2006/03/code_like_a_gir.html">Coding like a girl</a></li>
+            <li>Chair dancing, you should see my moves</li>
+          </ul>           
+   <!--   </section>-->
+      
+<!--      <aside class="fltrt">
+        <header>
+          <h2>Recently I've accomplished</h2>
+        </header>-->
+      <aside>
+        <h3>Recently I've accomplished</h3>
+        <ul>
+          <li>An annotated mobile first view prototype of a website</li>
+          <li>Teaching a team how to work with me remotely</li>
+          <li>A test of the <a href="http://survivingdesignprojects.tumblr.com/game">Surviving Design Projects game</a> to rave reviews</li>
+          <li>A plan, sketch, and code beginings of a comic strip template for web worker lessons, mobile first and responsive of course</li>
+        </ul>
+      </aside>
+<!--      <br class="clearfloat"/>-->
+      
+<!--      <div class="fltlft">
+        <p>So that's an overview, in code. Talk to you soon...</p>
+        <p>Kara</p>
+      </div> <br class="clearfloat"/>-->
+     
+        <p>At some point, I might add in flex-boxes to test how they might work with columns. I can Imagine content that calls for both CSS approaches.</p>
+        </div> <!-- end columns div-->
+    </article><!--end main-->
+<!--  </div><!--end container-->
+</body>
+</html>
